@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrology Generator</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Astrology Generator</h1>
+    <form id="astrologyForm" action="./index.html" method="GET">
+      <label for="month">Select Month:</label>
+      <select id="month" name="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+
+      <label for="zodiac">Select Zodiac Sign:</label>
+      <select id="zodiac" name="zodiac">
+        <option value="Aries">Aries</option>
+        <option value="Taurus">Taurus</option>
+        <option value="Gemini">Gemini</option>
+        <option value="Cancer">Cancer</option>
+        <option value="Leo">Leo</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Libra">Libra</option>
+        <option value="Scorpio">Scorpio</option>
+        <option value="Sagittarius">Sagittarius</option>
+        <option value="Capricorn">Capricorn</option>
+        <option value="Aquarius">Aquarius</option>
+        <option value="Pisces">Pisces</option>
+      </select>
+
+      <input type="submit">
+    </form>
+    <div id="predictionResult">
+      <h2>Your Prediction for <span id="selected-zodiac"></span> in <span id="selected-month"></span>:</h2>
+      <div id="predictionDetails">
+        <h3>Fortunate Thing: <span id="fortunateThing"></span></h3>
+        <h3>Challenge: <span id="challenge"></span></h3>
+        <h3>Advice: <span id="advice"></span></h3>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
